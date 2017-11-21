@@ -1,3 +1,12 @@
+Team: <%= @params["team"]["name"] %>
+Team Motto: <%= @params["team"]["motto"] %>
 
-
-
+<% @params["team"]["hero"].each do |hero| %>
+<br>
+Hero Name: <%= hero["name"] %>
+<br>
+Hero Power: <%= hero["power"] %>
+<br>
+Hero Biography: <%= hero["biography"] %>
+<br>
+<% end %>
